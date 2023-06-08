@@ -1,0 +1,46 @@
+body{
+    background: url(../img/wall_01.png);
+    background-size: cover;
+    font-family: 'Poppins';
+}
+.page.light-theme{
+    background: url(../img/wall_03_2.png);
+    background-size: cover;
+}
+@media (max-width:1240px) {
+    .switch{
+        position: relative;
+        left: -140px;
+    }
+    .spin{
+        position: relative;
+        left: -180px;
+    }
+    .light-theme .switch{
+        position: relative;
+        left: -130px;
+    }
+    .light-theme .spin{
+        position: relative;
+        left: -180px;
+    }
+}
+@media (max-width:740px) {
+    .switch{
+        position: relative;
+        left: -130px;
+    }
+    .spin{
+        object-fit: cover;
+        position: relative;
+        left: -170px;
+    }
+    .light-theme .switch{
+        position: relative;
+        left: -120px;
+    }
+    .light-theme .spin{
+        position: relative;
+        left: -170px;
+    }
+}

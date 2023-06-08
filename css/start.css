@@ -1,0 +1,335 @@
+
+*{
+    transition: 0.1s;
+}    
+body{
+    background: url(../img/wall_01.png);
+    background-size: contain;
+    font-family: 'Poppins';
+}
+.page.light-theme{
+    background: url(../img/wall_03_2.png);
+    background-size: contain;
+}
+.headline {
+    width: 1920px;
+    height: 40px;
+    background: #ffffff;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+.sidebar {
+    width: 100px;
+    height: 100%;
+    background: #d2c2c2;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+}
+.light-theme .sidebar{
+    background: #282c34;
+}
+.side-bar-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    width: 70px;
+    margin: 0 auto;
+    padding: 0;
+}
+.light-theme .side-bar-nav{
+    color: #c8a4ff;
+}
+.side-bar-nav-about {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.side-bar-nav-about:hover{
+    font-size: 20px;
+}
+.side-bar-nav-skills {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.side-bar-nav-skills:hover{
+    font-size: 20px;
+}
+.side-bar-nav-contacts {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.side-bar-nav-contacts:hover{
+    font-size: 20px;
+}
+.light-theme .headline {
+    width: 1920px;
+    height: 40px;
+    background: #252525;
+    color: white;
+    box-sizing: border-box;
+    margin-left: -10px;
+    margin-top: -20px;
+}
+.headline-text {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+}
+.container {
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 100px;
+}
+.logotext{
+    line-height: 1px;
+}
+.logo {
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-weight: 800;
+    font-family: "Poppins", cursive;
+    color: rgb(0, 0, 0);
+}
+.logo:hover{
+    -webkit-text-stroke: 1px grey;
+    color: #00000000;
+}
+.light-theme .logo{
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: #ffffffc2;
+}
+.logomain{
+    width: 117px;
+    height: 110px;
+    background-size: cover;
+    background: url(../img/logo2.png);
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+.switch {
+    width: 56px;
+    height: 76px;
+    cursor: pointer;
+    background: url(../img/light.png);
+    position: relative;
+    top: 50px;
+    left: 534px;
+}
+.light-theme .switch {
+    width: 26px;
+    height: 46px;
+    background-size: cover;
+    cursor: pointer;
+    background: url(../img/dark.png);
+    position: relative;
+    top: 65px;
+    left: 545px;
+}
+.face{
+    position: relative;
+    left: -150px;
+    top: 50px;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    opacity: 0.7;
+    border-radius: 30%;
+}
+.spin{
+    background: url(../img/spin.png);
+    width: 124px;
+    height: 124px;
+    animation: spin 6s linear 0s infinite;
+    cursor: pointer;
+    position: relative;
+    top: -50px;
+    left: 497px;
+}
+.light-theme .spin {
+    background: url(../img/spin2.png);
+    width: 124px;
+    height: 124px;
+    animation: spin 6s linear 0s infinite;
+    cursor: pointer;
+    position: relative;
+    top: -20px;
+    left: 497px;
+}
+@keyframes spin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+}
+.block1{
+    width: 100%;
+    height: 3px;
+    background: #ffffff59;
+    position: relative;
+    top: -50px;
+
+}
+.light-theme .block1{
+    background: #d4d4d4;
+}
+.my_text {
+    position: relative;
+    top: -40px;
+}
+.text {
+    font-family: "Poppins";
+    font-weight: 4400;
+    font-size: 20px;
+}
+.light-theme .text{
+    color: white;
+}
+.change_theme{
+    width: 0px;
+    height: 0px;
+    background: #00000000;
+    border: none;
+}
+.nav {
+    width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 0px;
+    font-size: 100px;
+}
+.nav-section-text {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 4px #000000;
+}
+.light-theme .nav-section-text{
+    -webkit-text-stroke: 2px #ffffff;
+}
+.light-theme .nav-section-text:hover{
+    -webkit-text-stroke: 0px #ffffff;
+    color: rgba(255, 255, 255, 0.377);
+}
+.nav-section-text:hover {
+    color: rgba(0, 0, 0, 0.377);
+    -webkit-text-stroke: 0px #000000;
+    transition: 0.5s;
+}
+.nav-section:hover{
+    color: rgba(0, 0, 0, 0.377);
+    -webkit-text-stroke: 0px #000000;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.nav:hover{
+    width: 1500px;
+    justify-content: space-between;
+    transition: 0.5s;
+    position: relative;
+    left: -100px;
+}
+.block2 {
+    width: 1300px;
+    height: 1px;
+    position: relative;
+    top: 130px;
+    background: #000;
+}
+.light-theme .block2{
+    background: #d4d4d4;
+}
+.description {
+    position: relative;
+    top: 180px;
+}
+.description-text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 50px;
+}
+.light-theme .description-text{
+    color: white;
+}
+.logodown{
+    position: relative;
+    left: 1270px;
+    bottom: 70px;
+}
+.visuall{
+    visibility: inherit;
+}
+.footer{
+    height: 126px;
+    width: 99vw;
+    background: #282c34;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: -7px;
+    top: 900px;
+    z-index: -2;
+}
+.footer-logo{
+    width: 300px;
+    height: 100px;
+}
+.footer-second-logo{
+    height: 126px;
+    position: relative;
+    bottom: 0px;
+}
+.logo-footer{
+    color: white;
+    font-size: 30px;
+}
+.navigation {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+    right: 150px;
+    list-style-type: none;
+}
+.navigation-footer-li {
+    color: white;
+    text-decoration: none;
+}
+.li{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.li:hover{
+    font-size: 25px;   
+}
+.footer-acluall-image{
+    position: relative;
+    top: 30%;
+}
